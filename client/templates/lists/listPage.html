@@ -1,0 +1,10 @@
+<template name="listPage">
+  <div id="main" class="row-fluid">
+    <h2>List {{title}}</h2>
+      <a href="{{pathFor 'addTask'}}" class="discuss btn btn-default">add</a
+>
+    {{#each tasks}}
+      {{> taskItem}}
+	{{/each}}
+   </div>
+</template>
